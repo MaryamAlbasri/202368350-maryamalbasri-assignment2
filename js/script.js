@@ -121,3 +121,23 @@ filterBtns.forEach((btn) => {
 
 /* Live search while typing */
 searchInput.addEventListener("input", updateProjects);
+
+const themeToggle = document.getElementById("theme-toggle");
+
+/* Load the saved theme when the page opens */
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+  document.body.classList.add("dark");
+  themeToggle.textContent = "☀️";
+}
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  const isDark = document.body.classList.contains("dark");
+  themeToggle.textContent = isDark ? "☀️" : "🌙";
+
+  /* Save the choice so it is still there after a refresh */
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+});

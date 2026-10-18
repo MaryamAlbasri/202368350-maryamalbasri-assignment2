@@ -7,6 +7,14 @@
   --accent: #0f766e;
 }
 
+body.dark {
+  --bg: #121212;
+  --text: #eeeeee;
+  --muted: #aaaaaa;
+  --card: #1e1e1e;
+  --accent: #2dd4bf;
+}
+
 /* Reset default browser spacing */
 * {
   margin: 0;
@@ -25,6 +33,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
 }
 
 /* Center each section and limit its width */
@@ -254,14 +263,17 @@ footer {
   color: #ffffff;
 }
 
-#project-search {
+  #project-search {
   flex: 1;
   min-width: 180px;
   padding: 8px 12px;
   border: 1px solid var(--muted);
   border-radius: 20px;
   font: inherit;
+  background: var(--bg);
+  color: var(--text);
 }
+
 
 /* Card hover effect */
 .project-card {
@@ -276,4 +288,19 @@ footer {
 /* Hide filtered-out cards and the empty-state message */
 .hidden {
   display: none;
+}
+
+
+
+/* Theme toggle button */
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.2);
 }
