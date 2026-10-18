@@ -6,7 +6,7 @@ An interactive, responsive personal portfolio website built with HTML, CSS, and 
 This project builds on my Assignment 1 portfolio by adding dynamic content, data handling, animations, and user feedback.
 
 ## Live Demo
-🔗 [View the website](PASTE-YOUR-GITHUB-PAGES-LINK-HERE)
+🔗 [View the website](https://maryamalbasri.github.io/202368350-maryamalbasri-assignment2/)
 
 ## What's New Since Assignment 1
 | Feature | Description |
