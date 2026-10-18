@@ -33,19 +33,31 @@
     <!-- Projects -->
     <section id="projects">
       <h2>Projects</h2>
+
+      <!-- Filter buttons and search box -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="hardware">Hardware</button>
+        <input type="search" id="project-search" placeholder="Search projects...">
+      </div>
+
       <div class="project-grid">
-        <article class="project-card">
+        <article class="project-card" data-category="web">
           <img src="assets/images/LogIn.png" alt="University Bus Tracker prototype">
           <h3>University Bus Tracker</h3>
           <p>A team project for SWE206 that helps students track campus buses and check routes and schedules, making it easier to plan trips around the university.</p>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-category="hardware">
           <img src="assets/images/Piplines.jpg" alt="Pipelined MIPS processor in Logisim">
           <h3>Pipelined MIPS Processor</h3>
           <p>A COE301 project where I designed a 5-stage pipelined MIPS processor in Logisim, including data forwarding and stall logic to handle hazards.</p>
         </article>
       </div>
+
+      <!-- Shown when no project matches the filter or the search -->
+      <p id="no-results" class="hidden">No projects found. Try a different filter or search term.</p>
     </section>
 
     <!-- Contact -->
@@ -83,3 +95,4 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+

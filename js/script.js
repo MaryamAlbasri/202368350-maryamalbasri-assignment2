@@ -64,7 +64,6 @@ document.querySelectorAll(".project-card img").forEach((img) => {
 
 
 
-/* Hide the popup */
 function closeLightbox() {
   lightbox.classList.remove("open");
 }
@@ -79,3 +78,46 @@ lightbox.addEventListener("click", (event) => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeLightbox();
 });
+
+
+/* Filter and search the projects */
+const filterBtns = document.querySelectorAll(".filter-btn");
+const searchInput = document.getElementById("project-search");
+const cards = document.querySelectorAll(".project-card");
+const noResults = document.getElementById("no-results");
+
+let activeFilter = "all";
+
+function updateProjects() {
+  const text = searchInput.value.trim().toLowerCase();
+  let visible = 0;
+
+  cards.forEach((card) => {
+    const matchesFilter =
+      activeFilter === "all" || card.dataset.category === activeFilter;
+    const matchesText = card.textContent.toLowerCase().includes(text);
+
+    if (matchesFilter && matchesText) {
+      card.classList.remove("hidden");
+      visible++;
+    } else {
+      card.classList.add("hidden");
+    }
+  });
+
+  /* Show the empty-state message only when nothing matched */
+  noResults.classList.toggle("hidden", visible > 0);
+}
+
+/* Filter buttons */
+filterBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    filterBtns.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    activeFilter = btn.dataset.filter;
+    updateProjects();
+  });
+});
+
+/* Live search while typing */
+searchInput.addEventListener("input", updateProjects);
