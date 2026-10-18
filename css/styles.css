@@ -304,3 +304,32 @@ footer {
 #theme-toggle:hover {
   transform: scale(1.2);
 }
+
+/* Form error messages */
+.error {
+  color: #d93025;
+  font-size: 0.85rem;
+  min-height: 1rem;
+}
+
+/* Red border on a field with an error */
+#contact-form input.invalid,
+#contact-form textarea.invalid {
+  border-color: #d93025;
+}
+
+/* Fade-in used for the confirmation message */
+#form-status.show {
+  animation: fade-in 0.4s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

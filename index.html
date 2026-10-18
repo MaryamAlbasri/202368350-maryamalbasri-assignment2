@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Page settings and link to stylesheet -->
   <meta charset="UTF-8">
@@ -7,6 +8,7 @@
   <title>Maryam Albasri | Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -28,7 +30,9 @@
       <p id="greeting"></p>
       <h1>Maryam Albasri</h1>
       <p class="tagline">Computer Science student</p>
-      <p>I'm a Computer Science student at King Fahd University of Petroleum and Minerals. I enjoy building clean, user-friendly websites and learning new technologies. This portfolio showcases some of my projects and my growth as a developer.</p>
+      <p>I'm a Computer Science student at King Fahd University of Petroleum and Minerals. I enjoy building clean,
+        user-friendly websites and learning new technologies. This portfolio showcases some of my projects and my growth
+        as a developer.</p>
     </section>
 
     <!-- Projects -->
@@ -47,13 +51,15 @@
         <article class="project-card" data-category="web">
           <img src="assets/images/LogIn.png" alt="University Bus Tracker prototype">
           <h3>University Bus Tracker</h3>
-          <p>A team project for SWE206 that helps students track campus buses and check routes and schedules, making it easier to plan trips around the university.</p>
+          <p>A team project for SWE206 that helps students track campus buses and check routes and schedules, making it
+            easier to plan trips around the university.</p>
         </article>
 
         <article class="project-card" data-category="hardware">
           <img src="assets/images/Piplines.jpg" alt="Pipelined MIPS processor in Logisim">
           <h3>Pipelined MIPS Processor</h3>
-          <p>A COE301 project where I designed a 5-stage pipelined MIPS processor in Logisim, including data forwarding and stall logic to handle hazards.</p>
+          <p>A COE301 project where I designed a 5-stage pipelined MIPS processor in Logisim, including data forwarding
+            and stall logic to handle hazards.</p>
         </article>
       </div>
 
@@ -64,15 +70,18 @@
     <!-- Contact -->
     <section id="contact">
       <h2>Contact Me</h2>
-      <form id="contact-form">
+      <form id="contact-form" novalidate>
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name">
+        <small class="error" id="name-error"></small>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email">
+        <small class="error" id="email-error"></small>
 
         <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <small class="error" id="message-error"></small>
 
         <button type="submit">Send</button>
         <!-- Confirmation message appears here after submitting -->
@@ -95,5 +104,5 @@
   <!-- JavaScript loaded last so all HTML elements exist first -->
   <script src="js/script.js"></script>
 </body>
-</html>
 
+</html>

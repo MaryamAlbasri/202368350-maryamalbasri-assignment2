@@ -37,16 +37,61 @@ const observer = new IntersectionObserver(
 
 sections.forEach((section) => observer.observe(section));
 
-/* Show a confirmation message instead of reloading */
+/* Contact form with validation and feedback */
 const form = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
+
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
+
+/* Show an error under one field */
+function showError(input, errorId, message) {
+  document.getElementById(errorId).textContent = message;
+  input.classList.toggle("invalid", message !== "");
+}
 
 form.addEventListener("submit", (event) => {
   event.preventDefault(); /* stop the page from reloading */
 
-  const name = document.getElementById("name").value.trim();
-  formStatus.textContent = `Thanks, ${name}! Your message has been received.`;
-  form.reset(); /* clear the fields */
+  let valid = true;
+  formStatus.textContent = "";
+
+  /* Name must not be empty */
+  if (nameInput.value.trim() === "") {
+    showError(nameInput, "name-error", "Please enter your name.");
+    valid = false;
+  } else {
+    showError(nameInput, "name-error", "");
+  }
+
+  /* Email must look like name@example.com */
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (emailInput.value.trim() === "") {
+    showError(emailInput, "email-error", "Please enter your email.");
+    valid = false;
+  } else if (!emailPattern.test(emailInput.value.trim())) {
+    showError(emailInput, "email-error", "Please enter a valid email address.");
+    valid = false;
+  } else {
+    showError(emailInput, "email-error", "");
+  }
+
+  /* Message needs at least 10 characters */
+  if (messageInput.value.trim().length < 10) {
+    showError(messageInput, "message-error", "Your message should be at least 10 characters.");
+    valid = false;
+  } else {
+    showError(messageInput, "message-error", "");
+  }
+
+  if (!valid) return; /* stop here if something is wrong */
+
+  /* Everything is valid: show the confirmation */
+  formStatus.textContent = `Thanks, ${nameInput.value.trim()}! Your message has been received.`;
+  formStatus.classList.add("show");
+  form.reset();
 });
 
 /* Open clicked project images in a popup */
