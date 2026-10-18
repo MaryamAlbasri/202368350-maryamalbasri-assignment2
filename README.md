@@ -1,6 +1,5 @@
 # 202368350-maryamalbasri-assignment2
-# Maryam Albasri -
- Personal Portfolio (Assignment 2)
+# Maryam Albasri - Personal Portfolio (Assignment 2)
 
 An interactive, responsive personal portfolio website built with HTML, CSS, and JavaScript for **SWE363 - Web Engineering, Assignment 2** at King Fahd University of Petroleum and Minerals (KFUPM).
 
