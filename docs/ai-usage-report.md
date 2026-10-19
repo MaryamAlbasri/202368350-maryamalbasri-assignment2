@@ -55,3 +55,28 @@ I did not submit the AI output unchanged. What I decided or changed myself:
 - Read through each piece of code so I could explain it in my technical documentation.
 
 **Academic integrity:** All AI assistance is documented in this report. The decisions, content, and final code choices are my own, and I understand every part of what I submitted.
+
+# (Add these two sections to docs/ai-usage-report.md)
+
+## 5. AI Usage Log
+
+| # | Tool | Date | Purpose | Files affected | What I changed |
+|---|---|---|---|---|---|
+| 1 | Claude (Anthropic) | 16 Oct 2026 | Reviewed the Assignment 2 requirements and planned which feature to build for each one | — (planning only) | Chose filter + search for dynamic content and dark mode with `localStorage` for data handling; rejected the suggestion to fetch from a public API as it did not fit a portfolio |
+| 2 | Claude (Anthropic) | 16 Oct 2026 | Terminal commands to clone the new repository and copy my Assignment 1 files into it | repository setup | Adjusted the paths because my repository was inside an `HW` folder, not where the AI assumed |
+| 3 | Claude (Anthropic) | 19 Oct 2026 | Generated the project filter buttons, search box, and the JavaScript that shows/hides cards | `index.html`, `css/styles.css`, `js/script.js` | Chose my own categories (Web, Hardware); fixed the CSS after I pasted it inside a media query by mistake; added a background and text colour to the search box so it works in dark mode |
+| 4 | Claude (Anthropic) | 19 Oct 2026 | Generated the dark/light theme toggle and the `localStorage` code that remembers the choice | `index.html`, `css/styles.css`, `js/script.js` | Moved the button into the navbar and deleted a duplicate one I had pasted; added a comment above the `body.dark` rule |
+| 5 | Claude (Anthropic) | 19 Oct 2026 | Generated the contact form validation, custom error messages, and the fade-in animation | `index.html`, `css/styles.css`, `js/script.js` | Repaired my HTML structure after pasting removed the `<section id="contact">` tag and heading; removed a duplicate `form-status` element |
+| 6 | Claude (Anthropic) | 19 Oct 2026 | Explained each new piece of code line by line (`data-` attributes, `localStorage`, the email regular expression) | — (learning only) | Wrote my own code comments in my own words based on the explanations |
+| 7 | Claude (Anthropic) | 19 Oct 2026 | Drafted the README, technical documentation, and this report | `README.md`, `docs/technical-documentation.md`, `docs/ai-usage-report.md` | Checked every statement against my actual code, filled in the browsers I tested and my live demo link, and rewrote several sections in my own words |
+
+*Full conversations and the AI's original output before my edits are submitted separately in `202368350-maryamalbasri-assignment2-ai-evidence.zip`.*
+
+## 6. Declaration
+
+I declare that I have disclosed all use of AI tools in this assignment, that the usage log above is complete and accurate, and that I understand and can explain every part of the code I submitted. The work submitted is my own, and all AI assistance has been documented as required.
+
+**Name:** Maryam Albasri
+**Student ID:** 202368350
+**Date:** ✏️ 19/10/2026
+**Signature:** Maryam Albasri
