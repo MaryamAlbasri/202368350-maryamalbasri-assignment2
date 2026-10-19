@@ -72,8 +72,7 @@ The form uses `novalidate` so the browser's default pop-ups are replaced by cust
 The filter bar uses `flex-wrap: wrap`, so the buttons and search box stack neatly on narrow screens.
 
 ## 9. Browser Compatibility
-Tested on: ✏️ *(list the browsers you tested, e.g. Safari, Google Chrome)*
-
+Tested on: Safari and Google Chrome on macOS.
 All features use standard, widely supported web APIs.
 
 ## 10. Accessibility

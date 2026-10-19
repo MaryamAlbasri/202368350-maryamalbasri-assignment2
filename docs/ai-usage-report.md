@@ -45,7 +45,8 @@ I did not submit the AI output unchanged. What I decided or changed myself:
 - **Chose the categories:** I labelled my own projects as Web and Hardware.
 - **Fixed the AI's code:** I added a background and text colour to the search box so it works in dark mode, and merged duplicated CSS rules.
 - **Fixed my own mistakes:** I repaired the HTML structure after pasting errors, and removed a duplicate theme button and a duplicate `form-status` element.
-- **Wrote my own comments:** after having each part explained, I wrote the code comments in my own words.
+- **Code comments:** the comments in my files were written by the AI. I asked for a line-by-line explanation of each feature so that I understand what every part does and can explain it.
+
 - **Completed the documentation:** I checked the drafted README and technical documentation against my actual code and filled in my own testing details.
 
 **How I checked correctness**
@@ -56,8 +57,6 @@ I did not submit the AI output unchanged. What I decided or changed myself:
 
 **Academic integrity:** All AI assistance is documented in this report. The decisions, content, and final code choices are my own, and I understand every part of what I submitted.
 
-# (Add these two sections to docs/ai-usage-report.md)
-
 ## 5. AI Usage Log
 
 | # | Tool | Date | Purpose | Files affected | What I changed |
@@ -67,8 +66,8 @@ I did not submit the AI output unchanged. What I decided or changed myself:
 | 3 | Claude (Anthropic) | 19 Oct 2026 | Generated the project filter buttons, search box, and the JavaScript that shows/hides cards | `index.html`, `css/styles.css`, `js/script.js` | Chose my own categories (Web, Hardware); fixed the CSS after I pasted it inside a media query by mistake; added a background and text colour to the search box so it works in dark mode |
 | 4 | Claude (Anthropic) | 19 Oct 2026 | Generated the dark/light theme toggle and the `localStorage` code that remembers the choice | `index.html`, `css/styles.css`, `js/script.js` | Moved the button into the navbar and deleted a duplicate one I had pasted; added a comment above the `body.dark` rule |
 | 5 | Claude (Anthropic) | 19 Oct 2026 | Generated the contact form validation, custom error messages, and the fade-in animation | `index.html`, `css/styles.css`, `js/script.js` | Repaired my HTML structure after pasting removed the `<section id="contact">` tag and heading; removed a duplicate `form-status` element |
-| 6 | Claude (Anthropic) | 19 Oct 2026 | Explained each new piece of code line by line (`data-` attributes, `localStorage`, the email regular expression) | — (learning only) | Code comments: the comments in my files were written by the AI. I asked for a line-by-line explanation of each feature so that I understand what every part does and can explain it.
-| 7 | Claude (Anthropic) | 19 Oct 2026 | Drafted the README, technical documentation, and this report | `README.md`, `docs/technical-documentation.md`, `docs/ai-usage-report.md` | Checked every statement against my actual code, filled in the browsers I tested and my live demo link, and rewrote several sections in my own words |
+| 6 | Claude (Anthropic) | 19 Oct 2026 | Explained each new piece of code line by line (`data-` attributes, `localStorage`, the email regular expression) | index.html, css/styles.css, js/script.js | Code comments: the comments in my files were written by the AI. I asked for a line-by-line explanation of each feature so that I understand what every part does and can explain it.|
+| 7 | Claude (Anthropic) | 19 Oct 2026 | Drafted the README, technical documentation, and this report | `README.md`, `docs/technical-documentation.md`, `docs/ai-usage-report.md` | Checked every statement against my actual code, corrected the claim about code comments, and added my live demo link|
 
 *Full conversations and the AI's original output before my edits are submitted separately in `202368350-maryamalbasri-assignment2-ai-evidence.zip`.*
 
@@ -78,5 +77,5 @@ I declare that I have disclosed all use of AI tools in this assignment, that the
 
 **Name:** Maryam Albasri
 **Student ID:** 202368350
-**Date:** ✏️ 19/10/2026
+**Date:** 19/10/2026
 **Signature:** Maryam Albasri
