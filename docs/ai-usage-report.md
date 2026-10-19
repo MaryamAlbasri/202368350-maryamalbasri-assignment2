@@ -68,7 +68,6 @@ I did not submit the AI output unchanged. What I decided or changed myself:
 | 4 | Claude (Anthropic) | 19 Oct 2026 | Generated the dark/light theme toggle and the `localStorage` code that remembers the choice | `index.html`, `css/styles.css`, `js/script.js` | Moved the button into the navbar and deleted a duplicate one I had pasted; added a comment above the `body.dark` rule |
 | 5 | Claude (Anthropic) | 19 Oct 2026 | Generated the contact form validation, custom error messages, and the fade-in animation | `index.html`, `css/styles.css`, `js/script.js` | Repaired my HTML structure after pasting removed the `<section id="contact">` tag and heading; removed a duplicate `form-status` element |
 | 6 | Claude (Anthropic) | 19 Oct 2026 | Explained each new piece of code line by line (`data-` attributes, `localStorage`, the email regular expression) | — (learning only) | Code comments: the comments in my files were written by the AI. I asked for a line-by-line explanation of each feature so that I understand what every part does and can explain it.
-|
 | 7 | Claude (Anthropic) | 19 Oct 2026 | Drafted the README, technical documentation, and this report | `README.md`, `docs/technical-documentation.md`, `docs/ai-usage-report.md` | Checked every statement against my actual code, filled in the browsers I tested and my live demo link, and rewrote several sections in my own words |
 
 *Full conversations and the AI's original output before my edits are submitted separately in `202368350-maryamalbasri-assignment2-ai-evidence.zip`.*
