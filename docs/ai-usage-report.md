@@ -55,6 +55,7 @@ I did not submit the AI output unchanged. What I decided or changed myself:
 - Used the browser console to check for errors.
 - Read through each piece of code so I could explain it in my technical documentation.
 
+
 **Academic integrity:** All AI assistance is documented in this report. The decisions, content, and final code choices are my own, and I understand every part of what I submitted.
 
 ## 5. AI Usage Log
